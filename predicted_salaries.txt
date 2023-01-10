@@ -1,0 +1,2 @@
+for 2 yr experience, 9 test score, 6 interview score salery is :[51837.39837398] 
+for 12 yr experience, 10 test score, 10 interview score salery is :[88227.64227642]
