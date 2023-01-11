@@ -4,11 +4,13 @@ import numpy as np
 
 #load data
 df1=pd.read_csv('./datasets/cars.csv')
+print('Orginal Data:')
 print(df1)
 
 ##creat dummis
 dummies=pd.get_dummies(df1)
 s2 = dummies.stack()
+print('Encoded Data:')
 print(dummies)
 
 #return dummies data to orginal data
@@ -21,5 +23,5 @@ for i in dummies.columns[3:]:
     orginal_df1= car_name.join(fitures, how='right').fillna(i[10:])
     orginal_df=orginal_df.append(orginal_df1, ignore_index=True)
 
-
+print('Return to Orginal:')
 print(orginal_df)
